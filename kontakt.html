@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | Psychotherapie [Vorname Nachname]</title>
+  <meta name="description" content="Kontakt zur Privatpraxis für Psychotherapie: Adresse, Telefon, E-Mail und Kontaktformular.">
+  <meta name="theme-color" content="#f4f3ee">
+  <!-- TESTPHASE: verhindert, dass Google die Testversion findet. Vor dem Livegang auf IONOS diese Zeile löschen. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preload" href="assets/fonts/newsreader-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="kopf">
+    <div class="container kopf__inner">
+      <a class="marke" href="index.html" aria-label="Startseite: Privatpraxis für Psychotherapie [Vorname Nachname]">
+        <svg class="marke__zeichen" viewBox="0 0 52 34" aria-hidden="true" focusable="false">
+          <circle cx="17" cy="17" r="15.5" fill="#e6dac6"/>
+          <circle cx="35" cy="17" r="15.5" fill="#93a898" style="mix-blend-mode:multiply" opacity=".8"/>
+        </svg>
+        <span class="marke__text">
+          <span class="marke__name"><span class="ph">[Vorname Nachname]</span></span>
+          <span class="marke__zusatz">Privatpraxis für Psychotherapie</span>
+        </span>
+      </a>
+      <button class="menu-knopf" type="button" aria-expanded="false" aria-controls="hauptnavigation">
+        <span class="menu-knopf__linien" aria-hidden="true"></span>
+        <span class="menu-knopf__text">Menü</span>
+      </button>
+      <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="therapieangebot.html">Therapieangebot</a></li>
+          <li><a href="ablauf-kosten.html">Ablauf und Kosten</a></li>
+          <li class="nav__cta"><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+
+    <section class="seitenkopf">
+      <div class="container">
+        <h1>Kontakt</h1>
+        <p class="lead">Schreiben Sie mir eine kurze Nachricht. Ein paar Sätze zu Ihrem Anliegen genügen, alles Weitere besprechen wir persönlich.</p>
+      </div>
+    </section>
+
+    <section class="abschnitt" style="padding-top:0">
+      <div class="container kontakt-raster">
+        <div>
+          <ul class="kontaktdaten">
+            <li><strong>Adresse</strong><span class="ph">[Straße Hausnummer]</span><br><span class="ph">[PLZ Ort]</span><br><a href="https://www.openstreetmap.org/" rel="noopener">Auf der Karte ansehen</a></li>
+            <li><strong>Telefon</strong><a href="tel:+49000000000"><span class="ph">[Telefonnummer]</span></a><br><span class="muted">Telefonische Sprechzeit: <span class="ph">[z. B. Di und Do, 12:00 bis 12:30 Uhr]</span></span></li>
+            <li><strong>E-Mail</strong><a href="mailto:kontakt@example.de"><span class="ph">[E-Mail-Adresse]</span></a></li>
+            <li><strong>Freie Therapieplätze</strong><span class="ph">[z. B. Aktuell sind wieder Erstgespräche möglich.]</span></li>
+            <li><strong>Erreichbarkeit</strong><span class="ph">[z. B. 5 Minuten von U-Bahn ..., Praxis im 2. OG, mit Aufzug]</span></li>
+          </ul>
+
+          <div class="krise">
+            <h3>In einer akuten Krise</h3>
+            <p>Ich kann keine Notfallversorgung anbieten. Wenn Sie sich in einer akuten Krise befinden, wenden Sie sich bitte an den ärztlichen Bereitschaftsdienst unter <a href="tel:116117">116 117</a>, die nächste psychiatrische Klinik oder im Notfall an <a href="tel:112">112</a>. Die Telefonseelsorge ist rund um die Uhr erreichbar: <a href="tel:08001110111">0800 111 0 111</a>.</p>
+          </div>
+        </div>
+
+        <div>
+          <form class="formular" action="kontakt.php" method="post">
+            <div class="meldung meldung--ok" id="meldung-ok" role="status" hidden>Vielen Dank, Ihre Nachricht wurde gesendet. Ich melde mich in den nächsten Werktagen bei Ihnen.</div>
+            <div class="meldung meldung--fehler" id="meldung-fehler" role="alert" hidden>Ihre Nachricht konnte nicht gesendet werden. Bitte prüfen Sie Ihre Angaben oder schreiben Sie mir direkt eine E-Mail.</div>
+
+            <h2 style="font-size:1.6rem">Nachricht schreiben</h2>
+
+            <div class="felder-zwei">
+              <div class="feld">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="feld">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="feld">
+              <label for="telefon">Telefon <span class="optional">(optional)</span></label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+            </div>
+
+            <fieldset class="feld">
+              <legend>Wie sind Sie versichert?</legend>
+              <div class="auswahl">
+                <label><input type="radio" name="versicherung" value="Privat versichert" required> Privat versichert</label>
+                <label><input type="radio" name="versicherung" value="Beihilfeberechtigt"> Beihilfeberechtigt</label>
+                <label><input type="radio" name="versicherung" value="Selbstzahlend"> Selbstzahlend</label>
+                <label><input type="radio" name="versicherung" value="Gesetzlich (Kostenerstattung)"> Gesetzlich (Kostenerstattung)</label>
+              </div>
+            </fieldset>
+
+            <div class="feld">
+              <label for="nachricht">Ihre Nachricht</label>
+              <textarea id="nachricht" name="nachricht" required></textarea>
+              <p class="feld-hilfe">Bitte schreiben Sie hier nur kurz, worum es geht. Ausführliche persönliche oder gesundheitliche Details besprechen wir lieber im Gespräch.</p>
+            </div>
+
+            <div class="honig" aria-hidden="true">
+              <label for="website">Bitte leer lassen</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <label class="einwilligung">
+              <input type="checkbox" name="einwilligung" value="ja" required>
+              <span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span>
+            </label>
+
+            <button class="btn" type="submit">Nachricht senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <div class="container">
+      <div class="fuss__raster">
+        <div>
+          <p class="fuss__name"><span class="ph">[Vorname Nachname]</span></p>
+          <p>Psychologische Psychotherapeutin (Verhaltenstherapie)<br>Privatpraxis für Psychotherapie</p>
+        </div>
+        <div>
+          <h2>Praxis</h2>
+          <p><span class="ph">[Straße Hausnummer]</span><br><span class="ph">[PLZ Ort]</span></p>
+        </div>
+        <div>
+          <h2>Kontakt</h2>
+          <ul>
+            <li><a href="tel:+49000000000"><span class="ph">[Telefonnummer]</span></a></li>
+            <li><a href="mailto:kontakt@example.de"><span class="ph">[E-Mail-Adresse]</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fuss__unten">
+        <p>&copy; <span id="jahr">2026</span> <span class="ph">[Vorname Nachname]</span></p>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
